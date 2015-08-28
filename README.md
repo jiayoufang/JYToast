@@ -13,6 +13,8 @@
 ####主要学习
 
 - UILabel的文字设置（主要是这两个方法的使用）
+
+	
 		- (void)drawTextInRect:(CGRect)rect
 		{
 	    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, self.textInsets)];
@@ -25,13 +27,14 @@
 		}
 
 - layer层添加动画的一种方式
+
 		- (void)addAnimationGroup
 		{
- 	   CABasicAnimation *forwardAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+		 CABasicAnimation *forwardAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
 	    forwardAnimation.duration = self.forwardAnimationDuration;
 	    forwardAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.5f :1.7f :0.6f :0.85f];
 	    forwardAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
- 	   forwardAnimation.toValue = [NSNumber numberWithFloat:1.0f];
+	    forwardAnimation.toValue = [NSNumber numberWithFloat:1.0f];
     
 	    CABasicAnimation *backwardAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
 	    backwardAnimation.duration = self.backwardAnimationDuration;
@@ -39,23 +42,22 @@
 	    backwardAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.4f :0.15f :0.5f :-0.7f];
 	    backwardAnimation.fromValue = [NSNumber numberWithFloat:1.0f];
 	    backwardAnimation.toValue = [NSNumber numberWithFloat:0.0f];
-    
- 	   CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
- 	   animationGroup.animations = @[forwardAnimation,backwardAnimation];
- 	   animationGroup.duration = forwardAnimation.duration + backwardAnimation.duration + kDefautlWaitAnimationDuration;
+	    
+	    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+	    animationGroup.animations = @[forwardAnimation,backwardAnimation];
+	    animationGroup.duration = forwardAnimation.duration + backwardAnimation.duration + kDefautlWaitAnimationDuration;
 	    animationGroup.removedOnCompletion = NO;
 	    animationGroup.delegate = self;
 	    animationGroup.fillMode = kCAFillModeForwards;
     
 	    [self.layer addAnimation:animationGroup forKey:@"customShow"];
-	}
-
-	//回调
+	    }
+	    //回调
 		- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 		{
-   		 if (flag) {
+		if (flag) {
         [self removeFromSuperview];
         //动画结束时从layer层移除动画，否则，会内存泄露。
         [self.layer removeAnimationForKey:@"customShow"];
-   			 }
-		}
+        }
+        }
