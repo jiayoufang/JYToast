@@ -90,13 +90,6 @@ static CGFloat const kDefaultTextInset = 10.0f;
     [keyWindow addSubview:self];
 }
 
-- (void)showText:(NSString *)text
-{
-    self.text = text;
-    [self sizeToFit];
-    [self showType:JYToastShowTypeBottom];
-}
-
 #pragma mark - Animation
 
 - (void)addAnimationGroup
@@ -124,6 +117,7 @@ static CGFloat const kDefaultTextInset = 10.0f;
     [self.layer addAnimation:animationGroup forKey:@"customShow"];
 }
 
+//回调
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
     if (flag) {
@@ -133,7 +127,7 @@ static CGFloat const kDefaultTextInset = 10.0f;
     }
 }
 
-#pragma mark - Text Configurate
+#pragma mark - Text
 
 - (void)sizeToFit
 {
@@ -141,7 +135,6 @@ static CGFloat const kDefaultTextInset = 10.0f;
     
     CGRect frame = self.frame;
     CGFloat width = CGRectGetWidth(self.bounds) + self.textInsets.left + self.textInsets.right;
-//    frame.size.width = width > self.maxWidth ? self.maxWidth : width;
     frame.size.width = MIN(width, self.maxWidth);
     frame.size.height = CGRectGetHeight(self.bounds) + self.textInsets.top + self.textInsets.bottom;
     self.frame = frame;

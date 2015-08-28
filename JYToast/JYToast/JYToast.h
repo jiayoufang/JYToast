@@ -59,13 +59,4 @@ typedef NS_ENUM(NSUInteger, JYToastShowType) {
  */
 - (void)showType:(JYToastShowType)type;
 
-/*!
- *  @author Yooeee
- *
- *  @brief  设置展示的文字
- *
- *  @param text 文字
- */
-- (void)showText:(NSString *)text;
-
 @end
