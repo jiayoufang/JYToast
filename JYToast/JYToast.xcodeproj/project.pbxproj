@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE7811541B902D84005544C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7811531B902D84005544C8 /* main.m */; };
+		FE7811571B902D84005544C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7811561B902D84005544C8 /* AppDelegate.m */; };
+		FE78115A1B902D84005544C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7811591B902D84005544C8 /* ViewController.m */; };
+		FE78115D1B902D84005544C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE78115B1B902D84005544C8 /* Main.storyboard */; };
+		FE78115F1B902D84005544C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE78115E1B902D84005544C8 /* Images.xcassets */; };
+		FE7811621B902D84005544C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7811601B902D84005544C8 /* LaunchScreen.xib */; };
+		FE78116E1B902D84005544C8 /* JYToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78116D1B902D84005544C8 /* JYToastTests.m */; };
+		FE78117C1B902E35005544C8 /* JYToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78117B1B902E35005544C8 /* JYToast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE7811681B902D84005544C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE7811461B902D84005544C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE78114D1B902D84005544C8;
+			remoteInfo = JYToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE78114E1B902D84005544C8 /* JYToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7811521B902D84005544C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE7811531B902D84005544C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE7811551B902D84005544C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE7811561B902D84005544C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE7811581B902D84005544C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE7811591B902D84005544C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE78115C1B902D84005544C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE78115E1B902D84005544C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE7811611B902D84005544C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FE7811671B902D84005544C8 /* JYToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE78116C1B902D84005544C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE78116D1B902D84005544C8 /* JYToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYToastTests.m; sourceTree = "<group>"; };
+		FE78117A1B902E35005544C8 /* JYToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYToast.h; sourceTree = "<group>"; };
+		FE78117B1B902E35005544C8 /* JYToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYToast.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE78114B1B902D84005544C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7811641B902D84005544C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE7811451B902D84005544C8 = {
+			isa = PBXGroup;
+			children = (
+				FE7811501B902D84005544C8 /* JYToast */,
+				FE78116A1B902D84005544C8 /* JYToastTests */,
+				FE78114F1B902D84005544C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE78114F1B902D84005544C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE78114E1B902D84005544C8 /* JYToast.app */,
+				FE7811671B902D84005544C8 /* JYToastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE7811501B902D84005544C8 /* JYToast */ = {
+			isa = PBXGroup;
+			children = (
+				FE7811551B902D84005544C8 /* AppDelegate.h */,
+				FE7811561B902D84005544C8 /* AppDelegate.m */,
+				FE7811581B902D84005544C8 /* ViewController.h */,
+				FE7811591B902D84005544C8 /* ViewController.m */,
+				FE78115B1B902D84005544C8 /* Main.storyboard */,
+				FE78115E1B902D84005544C8 /* Images.xcassets */,
+				FE7811601B902D84005544C8 /* LaunchScreen.xib */,
+				FE7811511B902D84005544C8 /* Supporting Files */,
+				FE78117A1B902E35005544C8 /* JYToast.h */,
+				FE78117B1B902E35005544C8 /* JYToast.m */,
+			);
+			path = JYToast;
+			sourceTree = "<group>";
+		};
+		FE7811511B902D84005544C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE7811521B902D84005544C8 /* Info.plist */,
+				FE7811531B902D84005544C8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE78116A1B902D84005544C8 /* JYToastTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE78116D1B902D84005544C8 /* JYToastTests.m */,
+				FE78116B1B902D84005544C8 /* Supporting Files */,
+			);
+			path = JYToastTests;
+			sourceTree = "<group>";
+		};
+		FE78116B1B902D84005544C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE78116C1B902D84005544C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE78114D1B902D84005544C8 /* JYToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7811711B902D84005544C8 /* Build configuration list for PBXNativeTarget "JYToast" */;
+			buildPhases = (
+				FE78114A1B902D84005544C8 /* Sources */,
+				FE78114B1B902D84005544C8 /* Frameworks */,
+				FE78114C1B902D84005544C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYToast;
+			productName = JYToast;
+			productReference = FE78114E1B902D84005544C8 /* JYToast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE7811661B902D84005544C8 /* JYToastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7811741B902D84005544C8 /* Build configuration list for PBXNativeTarget "JYToastTests" */;
+			buildPhases = (
+				FE7811631B902D84005544C8 /* Sources */,
+				FE7811641B902D84005544C8 /* Frameworks */,
+				FE7811651B902D84005544C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE7811691B902D84005544C8 /* PBXTargetDependency */,
+			);
+			name = JYToastTests;
+			productName = JYToastTests;
+			productReference = FE7811671B902D84005544C8 /* JYToastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE7811461B902D84005544C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "方";
+				TargetAttributes = {
+					FE78114D1B902D84005544C8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FE7811661B902D84005544C8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FE78114D1B902D84005544C8;
+					};
+				};
+			};
+			buildConfigurationList = FE7811491B902D84005544C8 /* Build configuration list for PBXProject "JYToast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE7811451B902D84005544C8;
+			productRefGroup = FE78114F1B902D84005544C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE78114D1B902D84005544C8 /* JYToast */,
+				FE7811661B902D84005544C8 /* JYToastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE78114C1B902D84005544C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE78115D1B902D84005544C8 /* Main.storyboard in Resources */,
+				FE7811621B902D84005544C8 /* LaunchScreen.xib in Resources */,
+				FE78115F1B902D84005544C8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7811651B902D84005544C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE78114A1B902D84005544C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE78115A1B902D84005544C8 /* ViewController.m in Sources */,
+				FE7811571B902D84005544C8 /* AppDelegate.m in Sources */,
+				FE78117C1B902E35005544C8 /* JYToast.m in Sources */,
+				FE7811541B902D84005544C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7811631B902D84005544C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE78116E1B902D84005544C8 /* JYToastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE7811691B902D84005544C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE78114D1B902D84005544C8 /* JYToast */;
+			targetProxy = FE7811681B902D84005544C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE78115B1B902D84005544C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE78115C1B902D84005544C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE7811601B902D84005544C8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE7811611B902D84005544C8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE78116F1B902D84005544C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE7811701B902D84005544C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE7811721B902D84005544C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE7811731B902D84005544C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FE7811751B902D84005544C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JYToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYToast.app/JYToast";
+			};
+			name = Debug;
+		};
+		FE7811761B902D84005544C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JYToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYToast.app/JYToast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE7811491B902D84005544C8 /* Build configuration list for PBXProject "JYToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE78116F1B902D84005544C8 /* Debug */,
+				FE7811701B902D84005544C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE7811711B902D84005544C8 /* Build configuration list for PBXNativeTarget "JYToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7811721B902D84005544C8 /* Debug */,
+				FE7811731B902D84005544C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE7811741B902D84005544C8 /* Build configuration list for PBXNativeTarget "JYToastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7811751B902D84005544C8 /* Debug */,
+				FE7811761B902D84005544C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE7811461B902D84005544C8 /* Project object */;
+}
